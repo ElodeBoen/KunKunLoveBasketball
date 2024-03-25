@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../image/background.jpg');
+    text-align: center;
+
+}
+
+h1 {
+    font: normal normal 100px/180px "包图小白体";
+    -webkit-font-smoothing: antialiased;
+	color: red;
+}
+
+table,.menu,.choice,
+    .win {
+    margin: 0 auto;
+}
+
+div {
+    width: 180px;
+}
+
+td div {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 60px;
+    line-height: 75px;
+    display: none;
+}
+
+.menu,.win {
+    position: relative;
+    background-color: #6781e0;
+    width: 360px;
+    height: 80px;
+    margin-bottom: 40px;
+    line-height: 74px;
+    font-size: 38px;
+    font-family: "WDKT";
+    box-shadow:
+        1px 1px 0px #5d77dd,
+        2px 2px 0px #5f79de,
+        3px 3px 0px #617bdf,
+        4px 4px 0px #637de0;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+}
+
+.side {
+    position: relative;
+    background-color: #6781e0;
+    width: 240px;
+    height: 80px;
+    margin-bottom: 40px;
+    line-height: 74px;
+    font-size: 38px;
+    font-family: "WDKT";
+    box-shadow:
+        1px 1px 0px #5d77dd,
+        2px 2px 0px #5f79de,
+        3px 3px 0px #617bdf,
+        4px 4px 0px #637de0;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+}
+
+.choice {
+    background-color: #6781e0;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    line-height: 74px;
+    font-size: 38px;
+    font-family: "包图小白体";
+    box-shadow:
+        1px 1px 0px #5d77dd,
+        2px 2px 0px #5f79de,
+        3px 3px 0px #617bdf,
+        4px 4px 0px #637de0;
+    border-radius: 5px;
+}
+
+.menu:hover {
+    transform: translateX(1px) translateY(3px);
+}
+
+.choice:hover {
+    transform: translateX(1px) translateY(3px);
+}
+
+.win:hover {
+    transform: translateX(1px) translateY(3px);
+}
+
+.side:hover {
+    transform: translateX(1px) translateY(3px);
+}
+
+#g {
+    margin-left: 400px;
+    display: none;
+}
+
+.win,.side {
+    display: none;
+}
+
+#side1 {
+    position: absolute;
+    right: 150px;
+    top: 200px;
+}
+
+#side2 {
+    position: absolute;
+    right: 150px;
+    top: 600px;
+}
+img {
+    position: absolute;
+    left:200px;
+    bottom: 250px;
+    opacity: 0.5;
+    display: none;
+}

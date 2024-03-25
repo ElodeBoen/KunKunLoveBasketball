@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>KunKun爱篮球</title>
+		<link href="css/ikun.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1 id="txz">KunKun爱篮球</h1>
+		<img id="pic" src="pad.png">
+		<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+		            	src="./music/晏铭 - 只因你太美.mp3">
+		      		你的浏览器版本太低，不支持audio标签
+			</audio>
+		<table>
+		    <tr>
+		        <td>
+		            <div id="a1"></div>
+		        </td>
+		        <td>
+		            <div id="a2"></div>
+		        </td>
+		        <td>
+		            <div id="a3"></div>
+		        </td>
+		        <td>
+		            <div id="a4"></div>
+		        </td>
+		        <td>
+		            <div id="a5"></div>
+		        </td>
+		        <td>
+		            <div id="a6"></div>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>
+		            <div id="b1"></div>
+		        </td>
+		        <td>
+		            <div id="b2"></div>
+		        </td>
+		        <td>
+		            <div id="b3"></div>
+		        </td>
+		        <td>
+		            <div id="b4"></div>
+		        </td>
+		        <td>
+		            <div id="b5"></div>
+		        </td>
+		        <td>
+		            <div id="b6"></div>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>
+		            <div id="c1"></div>
+		        </td>
+		        <td>
+		            <div id="c2"></div>
+		        </td>
+		        <td>
+		            <div id="c3"></div>
+		        </td>
+		        <td>
+		            <div id="c4"></div>
+		        </td>
+		        <td>
+		            <div id="c5"></div>
+		        </td>
+		        <td>
+		            <div id="c6"></div>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>
+		            <div id="d1"></div>
+		        </td>
+		        <td>
+		            <div id="d2"></div>
+		        </td>
+		        <td>
+		            <div id="d3"></div>
+		        </td>
+		        <td>
+		            <div id="d4"></div>
+		        </td>
+		        <td>
+		            <div id="d5"></div>
+		        </td>
+		        <td>
+		            <div id="d6"></div>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>
+		            <div id="e1"></div>
+		        </td>
+		        <td>
+		            <div id="e2"></div>
+		        </td>
+		        <td>
+		            <div id="e3"></div>
+		        </td>
+		        <td>
+		            <div id="e4"></div>
+		        </td>
+		        <td>
+		            <div id="e5"></div>
+		        </td>
+		        <td>
+		            <div id="e6"></div>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>
+		            <div id="f1"></div>
+		        </td>
+		        <td>
+		            <div id="f2"></div>
+		        </td>
+		        <td>
+		            <div id="f3"></div>
+		        </td>
+		        <td>
+		            <div id="f4"></div>
+		        </td>
+		        <td>
+		            <div id="f5"></div>
+		        </td>
+		        <td>
+		            <div id="f6"></div>
+		        </td>
+		    </tr>
+		</table>
+		<div class="menu" onclick="newgame()">开始新游戏</div>
+		<div class="menu" onclick="continuegame()">继续游戏</div>
+		<div class="menu" onclick="select()">选关</div>
+		<div class="menu" onclick="closewindow()">退出游戏</div>
+		<table id="g">
+		    <tr>
+		        <td>
+		            <div class="choice" onclick=start(0)>1</div>
+		        </td>
+		        <td>
+		            <div class="choice" onclick=start(1)>2</div>
+		        </td>
+		        <td>
+		            <div class="choice" onclick=start(2)>3</div>
+		        </td>
+		    </tr>
+		</table>
+		<div class="win" id="notlast" onclick=next(progress)>下一关</div>
+		<div class="win" onclick=returnselect()>选择关卡</div>
+		<div class="win" onclick=back()>返回</div>
+		<div class="side" id="side1" onclick=continuegame()>重试</div>
+		<div class="side" id="side2" onclick=leave()>返回</div>
+	</body>
+	<script src="js/ikun.js"></script>
+</html>
